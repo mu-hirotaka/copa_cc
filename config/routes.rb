@@ -5,6 +5,13 @@ Rails.application.routes.draw do
   # You can have the root of your site routed with "root"
   root 'welcome#index'
 
+  namespace :admin do
+    root 'top#index'
+    get 'login' => 'sessions#new', as: :login
+    post 'session' => 'sessions#create', as: :session
+    delete 'session' => 'sessions#destroy'
+  end
+
   get '*anything' => 'errors#routing_error'
 
   # Example of regular route:
