@@ -5,6 +5,9 @@ Rails.application.routes.draw do
   # You can have the root of your site routed with "root"
   root 'welcome#index'
 
+  get  '/auth/:provider/callback', :to => 'social#callback'
+  post '/auth/:provider/callback', :to => 'social#callback'
+
   namespace :admin do
     root 'top#index'
     get 'login' => 'sessions#new', as: :login
