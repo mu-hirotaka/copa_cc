@@ -8,5 +8,9 @@ class ApplicationController < ActionController::Base
 
   def store_location
     session[:previous_url] = request.fullpath
+    if (request.fullpath =~ /^\/select\/show/ )
+      session[:player_name] = params[:name]
+      session[:chara_type] = params[:c_type]
+    end
   end
 end

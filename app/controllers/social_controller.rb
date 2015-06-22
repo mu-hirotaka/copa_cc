@@ -1,8 +1,9 @@
 class SocialController < ApplicationController
   def callback
 #    comment = params[:comment]
-    auth = request.env['omniauth.auth']
-    logger.debug auth
+#    auth = request.env['omniauth.auth']
+    logger.debug session[:player_name]
+    logger.debug session[:chara_type]
 #    @user_token = auth['credentials']['token']
 #    @user_secret = auth['credentials']['secret']
 #    image = File.open("public/images/logo.png")

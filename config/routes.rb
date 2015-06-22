@@ -5,6 +5,9 @@ Rails.application.routes.draw do
   # You can have the root of your site routed with "root"
   root 'welcome#index'
 
+  get  'select'      => 'select#index', as: :select_root
+  get  'select/show' => 'select#show', as: :select_show
+
   get  '/auth/:provider/callback', :to => 'social#callback'
   post '/auth/:provider/callback', :to => 'social#callback'
 
