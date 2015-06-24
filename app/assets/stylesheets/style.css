@@ -1,0 +1,246 @@
+@charset "UTF-8";
+/* YUI 3.5.0 reset.css (http://developer.yahoo.com/yui/3/cssreset/) - http://cssreset.com */
+html{color:#000;background:#FFF}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0}table{border-collapse:collapse;border-spacing:0}fieldset,img{border:0}address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal}ol,ul{list-style:none}caption,th{text-align:left}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}q:before,q:after{content:''}abbr,acronym{border:0;font-variant:normal}sup{vertical-align:text-top}sub{vertical-align:text-bottom}input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit}input,textarea,select{*font-size:100%}legend{color:#000}#yui3-css-stamp.cssreset{display:none}
+
+html {
+background: #f50008 url(/images/bg_pitch.png) no-repeat 50% bottom fixed;
+background-size: 100%;
+}
+body {
+color: #fff;
+font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", verdana, Osaka, Sans-Serif;
+text-align:center;
+font-size: 16px;
+}
+div,p {
+	box-sizing: border-box;
+}
+img {
+	display: block;
+}
+.fL { float:left; }
+.fR {float: right; }
+.dispTbl { display: table;}
+.dispCell { display: table-cell; }
+.w10 { width:10%; }
+.w20 { width:20%; }
+.w30 { width:30%; }
+.w40 { width:40%; }
+.w50 { width:50%; }
+.w60 { width:60%; }
+.w70 { width:70%; }
+.w80 { width:80%; }
+.w90 { width:90%; }
+.w100 { width:100%; }
+.mb10 { margin-bottom:10px; }
+.tex_w { color:white; }
+.texL {font-size:30px !important; }
+.texXL {font-size:36px !important; }
+.texS {font-size:small !important; }
+header h1 {
+	max-width: 550px;
+	max-height: 90px;
+	width: 90%;
+	margin: auto ;
+}
+header h1 img {
+	width: 100%;
+}
+
+#main {
+	max-width: 1000px;
+	width: 100%;
+	margin: auto;
+	padding-bottom: 40px;
+}
+#main #playerPic img,#main #catch img {
+	width: 100%;
+	max-width: 640px;
+	margin: auto;
+}
+#main #copy_top {
+	font-size: 30px;
+	line-height: 1.5;
+	font-weight: bold;
+}
+#main #inner {
+	max-width: 640px;
+	margin:auto;
+}
+#main #type img {
+	width: 100%;
+	max-width: 1000px;
+	margin: auto;
+}
+#main #characterPic {
+	max-width: 480px;
+	margin: auto;
+}
+#main #characterPic img {
+	max-width: 480px;
+	width: 100%;
+	margin: auto;
+}
+#main #texSelect {
+	font-size: 30px;
+	line-height: 1.5;
+	font-weight: bold;
+}
+#main #resultBox {
+	background: rgba(245,0,8,.7);
+	border: 3px solid rgba(180,0,0,1);
+	padding:20px;
+	margin: 0 10px;
+}
+#main #texResult {
+	font-size: 24px;
+	line-height: 1.5;
+	font-weight: bold;
+	color: black;
+}
+input[type="text"] {
+	font-weight: normal;
+	width: 100%;
+	max-width: 360px;
+	padding: 10px;
+	border-radius: 2px;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+	background: #eee;
+	box-shadow: inset 2px 2px 1px #ccc;
+}
+input[type="text"]:focus {
+	background: #fff;
+}
+input::-webkit-input-placeholder {
+    color:    #999;
+}
+input:-moz-placeholder {
+    color:    #999;
+}
+input[type="button"] {
+	font-size: 30px;
+	font-weight: bold;
+	padding: 10px;
+	width: 100%;
+	max-width: 360px;
+	box-sizing: border-box;
+	margin: 10px;
+	background-color: #fff;
+	border-radius: 4px;
+	border: 1px solid #b30000;
+	box-shadow: 0px 3px 0px rgba(120,0,0,1);
+	cursor: pointer;
+	transition-property: background-color, color;
+	transition-duration:.25s;
+}
+input[type="button"]:focus,input[type="button"]:hover {
+	color:white;
+	background-color: #333;
+}
+input[type="button"].tw {
+	font-size: 30px;
+	font-weight: bold;
+	padding: 10px;
+	width: 100%;
+	max-width: 360px;
+	box-sizing: border-box;
+	margin: 10px;
+	background: rgba(0,172,237,1) url(/images/twitter-bird-bgs.png) no-repeat 10px 50%;
+	color: white;
+	border-radius: 4px;
+	border: 1px solid rgba(0,138,189,1);
+	box-shadow: 0px 3px 3px rgba(0,123,169,.9);
+	cursor: pointer;
+	transition-property: background-color;
+	transition-duration:.25s;
+}
+input[type="button"].tw:focus,input[type="button"].tw:hover {
+	background-color: rgba(69,205,255,1);
+}
+#topInfo {
+	width: 95%;
+	margin: 30px auto 0;
+	background: rgba(245,0,8,.4);
+	border: 3px solid rgba(180,0,0,1);
+	padding:20px;
+}
+#topInfo .presImg {
+	width: 30%;
+	float:left;
+	padding: 0 10px 0 0;
+}
+#topInfo .presImg img {
+	width:100%;
+	max-width: 240px;
+}
+#topInfo .presTitle {
+	width: 70%;
+	float: right;
+	font-size: 30px;
+	line-height: 1.5;
+	text-align: left;
+	font-weight: bold;
+}
+#topInfo .presDes {
+	width: 70%;
+	float: right;
+	line-height: 1.6;
+	text-align: left;
+}
+#topInfo .presDes h4 {
+	font-weight: bold;
+	margin-top: .5em;
+	padding-top: .5em;
+	border-top: 1px solid white;
+	font-size: larger;
+}
+
+footer {
+	max-width: 450px;
+	width: 90%;
+	margin: auto ;
+	padding: 0 0 40px;
+}
+footer img {
+	width: 100%;
+}
+
+.cf:before,
+.cf:after{
+  content:"";
+  display: table;
+}
+.cf:after{
+  clear:both;
+}
+/*IE6,7対策 （haslayout対策）*/
+.cf{
+  *zoom:1;
+}
+
+@media screen and (max-width: 480px) {
+	#main #copy_top {
+		font-size: medium;
+	}
+	input[type="button"],input[type="button"].tw {
+		font-size: large;
+	}
+	#topInfo .presImg,#topInfo .presTitle,#topInfo .presDes {
+		float:none;
+		width: 100%;
+	}
+	#topInfo .presImg {
+		padding:0;
+	}
+	#topInfo .presImg img {
+		margin: auto;
+		margin-bottom: 10px;
+	}
+	#topInfo .presTitle {
+		font-size: large;
+	}
+	#topInfo .presDes {
+		font-size: small;
+	}
+}

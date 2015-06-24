@@ -1,6 +1,23 @@
-select#index page
-<div>
-  <input id="player_name" name="player_name" type="text" />
-  <button id="player_select_button">決定</button>
+<header role="banner">
+<h1><img src="/images/header.png" title="COPA COCA-COLA2015" /></h1>
+</header>
+
+<div id="main" role="main">
+	<div id="inner">
+		<div id="characterPic">
+      <% chara_image_path = "/images/type" + @chara_type.to_s + ".png" %>
+      <img src="<%= chara_image_path %>" title="<%= @chara_type_name %>" />
+		</div>
+		<div id="texSelect" class="mb10">
+      「<%= @chara_type_name %>」タイプの<br />Jリーガーは誰？
+		</div>
+
+		<input type="text" placeholder="ここに選手の名前を入力してください" id="player_name"/><br />
+		<input type="button" value="投票する" id="player_select_button" />
+    <input type="hidden" name="chara_type" value="<%= @chara_type %>" id="chara_type">
+	</div>
 </div>
-<div id="chara_type" style="display: none;" data-chara-type="<%= @chara_type %>"></div>
+
+<footer role="contentinfo">
+<a href="http://www.cocacola.jp/copa/" target="_blank"><img src="/images/title_copa.png" title="COPA COCA-COLA2015" /></a>
+</footer>

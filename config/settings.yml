@@ -1,4 +1,6 @@
 defaults: &defaults
+ chara:
+   names: [革命児, 仕事人, 頭脳派, 切り札, 守護神, 挑戦者, 強心臓, 韋駄天, 天才肌, 型破り, 熱血漢]
 
 development:
   <<: *defaults

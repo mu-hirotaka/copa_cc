@@ -4,6 +4,7 @@ class SocialController < ApplicationController
 #    auth = request.env['omniauth.auth']
     logger.debug session[:player_name]
     logger.debug session[:chara_type]
+    logger.debug session[:chara_type_name]
 #    @user_token = auth['credentials']['token']
 #    @user_secret = auth['credentials']['secret']
 #    image = File.open("public/images/logo.png")
