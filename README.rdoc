@@ -32,10 +32,10 @@
 
 === Twitter関連 セットアップ
   # 下記についてはメールでシェアいたします。
-  $ echo 'TW_CONSUMER_KEY=*****' >> ~/.bash_profile
-  $ export TW_CONSUMER_KEY=*****
-  $ echo 'TW_CONSUMER_SECRET=*****' >> ~/.bash_profile
-  $ export TW_CONSUMER_SECRET=*****
+  $ echo 'TW_COPA_CONSUMER_KEY=*****' >> ~/.bash_profile
+  $ export TW_COPA_CONSUMER_KEY=*****
+  $ echo 'TW_COPA_CONSUMER_SECRET=*****' >> ~/.bash_profile
+  $ export TW_COPA_CONSUMER_SECRET=*****
 
 === copa_cc install
   $ git clone https://github.com/mu-hirotaka/copa_cc.git
