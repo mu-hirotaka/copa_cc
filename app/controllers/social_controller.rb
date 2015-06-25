@@ -6,12 +6,8 @@ class SocialController < ApplicationController
     auth = request.env['omniauth.auth']
     @user_token = auth['credentials']['token']
     @user_secret = auth['credentials']['secret']
-
-    logger.debug session[:player_name]
-    logger.debug session[:chara_type]
-    logger.debug session[:chara_type_name]
-    # TODO
-    image = File.open("public/images/share6.jpg")
+    image_path = "public/images/share" + session[:chara_type] + ".jpg"
+    image = File.open(image_path)
     twitter_client.update_with_media(comment, image)
   end
 
