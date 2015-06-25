@@ -1,14 +1,18 @@
 class SocialController < ApplicationController
   def callback
-#    comment = params[:comment]
-#    auth = request.env['omniauth.auth']
+    url = " http://www.cocacola.jp/copa/"
+    hash_tag = " #test"
+    comment = "キミが選んだ「" + session[:chara_type_name] + "」は" + session[:player_name] + "選手!" + url + hash_tag
+    auth = request.env['omniauth.auth']
+    @user_token = auth['credentials']['token']
+    @user_secret = auth['credentials']['secret']
+
     logger.debug session[:player_name]
     logger.debug session[:chara_type]
     logger.debug session[:chara_type_name]
-#    @user_token = auth['credentials']['token']
-#    @user_secret = auth['credentials']['secret']
-#    image = File.open("public/images/logo.png")
-#    twitter_client.update_with_media(comment, image)
+    # TODO
+    image = File.open("public/images/share6.jpg")
+    twitter_client.update_with_media(comment, image)
   end
 
   private
