@@ -2,7 +2,7 @@ class SocialController < ApplicationController
   def callback
     url = " http://www.cocacola.jp/copa/"
     hash_tag = " #test"
-    comment = "キミが選んだ「" + session[:chara_type_name] + "」は" + session[:player_name] + "選手!" + url + hash_tag
+    comment = "キミが選んだ「" + session[:chara_type_name] + "」は" + session[:player_name] + "選手!\n" + url + hash_tag
     auth = request.env['omniauth.auth']
     @user_token = auth['credentials']['token']
     @user_secret = auth['credentials']['secret']
