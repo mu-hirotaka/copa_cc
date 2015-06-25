@@ -11,6 +11,10 @@ class SocialController < ApplicationController
     twitter_client.update_with_media(comment, image)
   end
 
+  def callback_failure
+    redirect_to root_url
+  end
+
   private
   def twitter_client
     Twitter::Client.new(

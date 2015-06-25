@@ -10,6 +10,7 @@ Rails.application.routes.draw do
 
   get  '/auth/:provider/callback', :to => 'social#callback'
   post '/auth/:provider/callback', :to => 'social#callback'
+  get '/auth/failure', :to => 'social#callback_failure'
 
   namespace :admin do
     root 'top#index'
