@@ -1,9 +1,9 @@
 class SocialController < ApplicationController
   def callback
+    auth = request.env['omniauth.auth']
     url = "http://copa-eleven.soccer-king.jp"
     hash_tag = "#コパコカコーラ"
-    comment = "キミが選んだ「" + session[:chara_type_name] + "」は" + session[:player_name] + "選手!\n\n投票結果をツイートしてコーラ１ケースを当てよう!\n参加はこちら⇒" + url + "\n\n" + hash_tag
-    auth = request.env['omniauth.auth']
+    comment = "【キミがイメージする選手は？】\n「" + session[:chara_type_name] + "」といえば、" + session[:player_name] + "選手!\n\n投票結果をツイートしてコーラ1ケースを当てよう！\n参加はこちら⇒" + url + "\n" + hash_tag
     @user_token = auth['credentials']['token']
     @user_secret = auth['credentials']['secret']
     image_path = "public/images/share" + session[:chara_type] + ".jpg"
