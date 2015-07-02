@@ -203,15 +203,13 @@ input[type="button"].tw:focus,input[type="button"].tw:hover {
 }
 #jleague {
 	max-width:450px;
-	background: black;
 	color: white;
 	margin: 0 auto 20px;
 	text-align:left;
 	font-size: small;
-	border: 1px solid white;
 }
 #jleague div {padding: 5px;}
-#jleague div img {width:100%;}
+#jleague div img {width:90%;}
 
 footer {
 	max-width: 450px;
@@ -268,5 +266,6 @@ footer img {
 	}
 	#jleague {
 		margin: 0 10px 10px;
+		font-size: x-small;
 	}
 }
