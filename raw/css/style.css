@@ -25,6 +25,8 @@ img {
 .fR {float: right; }
 .dispTbl { display: table;}
 .dispCell { display: table-cell; }
+.vT {vertical-align:top;}
+.vM {vertical-align:middle;}
 .w10 { width:10%; }
 .w20 { width:20%; }
 .w30 { width:30%; }
@@ -40,13 +42,13 @@ img {
 .texL {font-size:30px !important; }
 .texXL {font-size:36px !important; }
 .texS {font-size:small !important; }
-header h1 {
+h1 {
 	max-width: 550px;
 	max-height: 90px;
 	width: 90%;
 	margin: auto ;
 }
-header h1 img {
+h1 img {
 	width: 100%;
 }
 
@@ -199,6 +201,17 @@ input[type="button"].tw:focus,input[type="button"].tw:hover {
 	border-top: 1px solid white;
 	font-size: larger;
 }
+#jleague {
+	max-width:450px;
+	background: black;
+	color: white;
+	margin: 0 auto 20px;
+	text-align:left;
+	font-size: small;
+	border: 1px solid white;
+}
+#jleague div {padding: 5px;}
+#jleague div img {width:100%;}
 
 footer {
 	max-width: 450px;
@@ -252,5 +265,8 @@ footer img {
 		line-height: 1.5;
 		font-weight: bold;
 		color: black;
+	}
+	#jleague {
+		margin: 0 10px 10px;
 	}
 }
